@@ -1,63 +1,58 @@
-Expense Tracker
+# Expense Tracker
 
 A MERN stack application to track daily expenses with authentication, filtering, and real-time balance updates.
 
-Features
+## Features
+- User login and signup with JWT
+- Add, edit, and delete expenses
+- Filter expenses by date, category, and amount
+- Real-time balance summary
+- Responsive UI built with React and Tailwind CSS
+- REST API developed using Node.js, Express, and MongoDB
 
-User login and signup with JWT
+## Tech Stack
+- Frontend: React, Tailwind CSS
+- Backend: Node.js, Express.js
+- Database: MongoDB
+- Tools: JWT, bcrypt, Git, VS Code
 
-Add, edit, delete expenses
+## Setup
 
-Filter by date, category, and amount
-
-Real-time balance summary
-
-Responsive UI with React and Tailwind CSS
-
-REST API built with Node.js, Express, and MongoDB
-
-Tech Stack
-
-Frontend: React, Tailwind CSS
-
-Backend: Node.js, Express.js
-
-Database: MongoDB
-
-Tools: JWT, bcrypt, Git, VS Code
-
-Setup
-Backend
+### Backend
 cd backend
 npm install
 npm start
 
+bash
+Copy code
 
-Add a .env file with:
-
+Create a `.env` file inside the backend folder:
 MONGO_URI=your_connection_string
-JWT_SECRET=your_secret
+JWT_SECRET=your_secret_key
 PORT=5000
 
-Frontend
+shell
+Copy code
+
+### Frontend
 cd frontend
 npm install
 npm start
 
-Project Structure
-backend/   → API, models, controllers
-frontend/  → React UI
+shell
+Copy code
 
-API
+## Project Structure
+backend/ → API, models, controllers
+frontend/ → React UI
 
-POST /api/auth/register
+bash
+Copy code
 
-POST /api/auth/login
-
-GET /api/expenses
-
-POST /api/expenses
-
-PUT /api/expenses/:id
-
-DELETE /api/expenses/:id
+## API Endpoints
+- POST /api/auth/register
+- POST /api/auth/login
+- GET /api/expenses
+- POST /api/expenses
+- PUT /api/expenses/:id
+- DELETE /api/expenses/:id
